@@ -41,7 +41,7 @@ const year = new Date().getFullYear();
       <p>
         Site source:
         <a
-          href="https://www.github.com/natereprogle/reprogle.org"
+          href="https://www.github.com/natereprogle/website"
           class="hover:underline">
           click here
         </a>
