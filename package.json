@@ -12,7 +12,7 @@
 		"lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
 		"lint:eslint": "eslint . --fix",
 		"lint": "run-s lint:*",
-		"deploy": "pnpm run build && wrangler deploy --assets=./dist",
+		"deploy": "pnpm run build && wrangler deploy --assets=./dist --compatibility-date 2025-11-29",
 		"cf-typegen": "wrangler types"
 	},
 	"dependencies": {
