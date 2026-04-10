@@ -18,12 +18,12 @@ import headerImage from "@/assets/images/Keys.jpg"
           class="w-full break-all rounded-2xl dark:bg-[#4e4e4e] bg-white py-2 px-4 md:w-fit neo-shadow border-black border-4">
           <code>
             ssh-ed25519 <br class="block md:hidden"/>
-            AAAAC3NzaC1lZDI1NTE5AAAAIHXj4naNfNjrKvj1Gm0WBAICOrmh3YEQe1h5KHmkFMMf
+            AAAAC3NzaC1lZDI1NTE5AAAAIOays2toJnaF3lloSBn+pU+8b1BnY/FlulMhNyMEv+ZX
           </code>
         </div>
         <p class="header">
           It has a fingerprint of
-          <code class="break-all rounded-md border-black border-2 dark:bg-[#4e4e4e] bg-white p-[2px] neo-shadow-small">SHA256:+Anww30dTyHENrG1+bkuJcZlhvIGGl+7j1x2VmUfdsg</code>.
+          <code class="break-all rounded-md border-black border-2 dark:bg-[#4e4e4e] bg-white p-[2px] neo-shadow-small">SHA256:YCSOGc+nMfwk/MR+zBHSR+cIjz4GqqMPX+5kvQiDns0</code>.
         </p>
         <div class="flex flex-col space-y-4 pb-8">
           <p class="header">
