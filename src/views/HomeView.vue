@@ -1,54 +1,70 @@
 <script setup lang="ts">
-import Header from "@/components/Header.vue";
-import headerImage from "@/assets/images/Profile.png"
-import Skills from "@/components/Skills.vue";
-import Experience from "@/components/Experience.vue";
+import Header from "@/components/HeaderComponent.vue";
+import headerImage from "@/assets/images/Profile.png";
+import SkillsComponent from "@/components/SkillsComponent.vue";
+import ExperienceComponent from "@/components/ExperienceComponent.vue";
 </script>
 
 <template>
   <main ref="el">
     <div class="h-screen flex flex-col justify-between">
-      <Header subtitle="I'm Nate" title="Hi there!" :imageUrl="headerImage"
-              imageText="@natereprogle"></Header>
+      <Header
+        subtitle="I'm Nate"
+        title="Hi there!"
+        :imageUrl="headerImage"
+        imageText="@natereprogle"
+      ></Header>
     </div>
     <div class="space-y-14 mt-8 mx-7 lg:mx-20">
       <h1
-        class="subheader text-[1.5rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] font-medium">I
-        am a <span class="highlight-blue">Software Engineer</span> based in <span
-          class="highlight-orange">Arkansas</span>. I've carried
-        many titles over my career, with
-        <span class="highlight-green">skills including</span> management, logistics, & excellent
-        customer service.</h1>
-      <hr class="text-raisinblack-400 bg-raisinblack-400 h-[2px]"/>
-      <div class="block pb-10 lg:flex lg:justify-between">
+        class="subheader text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-medium"
+      >
+        I am a <span class="highlight-blue">Software Engineer</span> based in
+        <span class="highlight-orange">Arkansas</span>. Whether it's building web applications,
+        designing APIs, or automating workflows, I enjoy turning complex problems into simple,
+        reliable solutions through <span class="highlight-green">thoughtful engineering</span>.
+      </h1>
+      <div class="neo-divider"></div>
+      <div class="block pb-10 lg:flex lg:justify-between lg:items-start lg:gap-12">
         <h2
-          class="subheader text-[1.5rem] sm:text-[2rem] md:text-[2rem] lg:text-[2.3rem] font-medium">
-          About me</h2>
-        <p class="leading-7 lg:w-1/2 header">I excel in fast-paced customer focused environments
-          where
-          service is the main goal. While many say they&apos;re good
-          at multitasking, I pride myself in being able to handle
-          multiple tasks efficiently <em>and</em> accurately. I&apos;m
-          also very passionate about driving positive change in the
-          workforce as well as the world we live in. <br/>
-          <br/>I started working in the food industry while going to
-          college full time. After 3 years, I moved full-time to
-          transportation and logistics while continuing my studies.
-          Within 6 months, and not much experience to my name, I moved
-          into a management position where I exceeded even my own
-          expectations. After graduating, I moved into IT on J.B. Hunt's
-          Unified Communications Engineering team.<br/>
-          <br/>
-          In November 2025, I felt called to step into the nonprofit sector
-          and joined Restore Hope, Inc., a 501(c)(3) based here in Arkansas.
-          Working in this field has been incredibly rewarding, giving me the
-          opportunity to build meaningful solutions that directly support people,
-          families, and communities in need.</p>
+          class="subheader text-[1.5rem] sm:text-[2rem] md:text-[2rem] lg:text-[2.3rem] font-medium lg:sticky lg:top-28"
+        >
+          About me
+        </h2>
+        <div class="neo-card p-6 md:p-8 lg:w-1/2 dark:text-white">
+          <p class="leading-7 header">
+            I enjoy solving complex problems, building reliable software, and creating systems that
+            make people&apos;s lives easier. Throughout my career, I&apos;ve worked in customer
+            service, transportation and logistics, IT, and software engineering, giving me a unique
+            perspective on how technology can support both organizations and the people they serve.
+            <br />
+            <br />
+            My professional journey began while attending college full-time, where I worked in the
+            food service industry before transitioning into transportation and logistics. Early
+            opportunities to lead teams and improve operations helped shape my approach to
+            problem-solving, collaboration, and continuous improvement.
+            <br />
+            <br />
+            After graduating, I moved into technology and software development, where I&apos;ve
+            focused on designing, building, and maintaining applications, integrations, and internal
+            platforms. I&apos;ve had the opportunity to work across the full software development
+            lifecycle, from architecture and implementation to support and ongoing improvement.
+            <br />
+            <br />
+            In November 2025, I joined Restore Hope, a 501(c)(3) organization based in Arkansas.
+            Today, I help develop technology that supports programs serving individuals and families
+            throughout our communities. It&apos;s rewarding work that combines my passion for
+            software engineering with the opportunity to contribute to a mission that creates
+            meaningful, lasting impact. There&apos;s no better feeling than knowing the work I do
+            every day helps make a difference in people&apos;s lives!
+          </p>
+        </div>
       </div>
+      <div class="neo-divider"></div>
       <div>
-        <div class="block lg:flex lg:justify-between">
-          <Skills></Skills>
-          <Experience></Experience>
+        <div class="block lg:flex lg:justify-between lg:gap-12">
+          <SkillsComponent></SkillsComponent>
+          <ExperienceComponent></ExperienceComponent>
         </div>
       </div>
     </div>
